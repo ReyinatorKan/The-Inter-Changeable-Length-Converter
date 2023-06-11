@@ -1,0 +1,42 @@
+<html>
+        <body><!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+
+    <body style="background-color:#0e5708">
+
+        <center><h2 style="background-color:#f5b520">The Inter-Convertable Length Calculator</h2></center>
+
+        <form style="background-color:#f2e688;margin-top:50px;margin-right:150px;margin-bottom:150px;margin-left:150px" name="converter">
+            <center>
+                <br>
+            Cm: <input type="number" name="cm" onChange="cmConvert()">
+                <br><br>
+            Inch: <input type="number" name="inch" onChange="inchConvert()">
+                <br><br>
+            Feet: <input type="number" name="feet" onChange="feetConvert()">
+                <br>
+                <br><br>
+            </center>
+        </form>
+
+        <script> function cmConvert(){
+            document.converter.inch.value = document.converter.cm.value/2.54
+            document.converter.feet.value = document.converter.cm.value/30.48
+        }
+                 function inchConvert(){
+            document.converter.cm.value = document.converter.inch.value*2.54
+            document.converter.feet.value = document.converter.inch.value/12
+        }
+                 function feetConvert(){
+            document.converter.cm.value = document.converter.feet.value*30.48
+            document.converter.inch.value = document.converter.feet.value*12
+        }
+        </script>
+    </body>
+</html></body>
+        <style></style>
+        <script></script>
+      </html>
